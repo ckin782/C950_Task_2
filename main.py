@@ -466,9 +466,7 @@ def user_interface():
         package = package_hashtable.get(package_id)
         package_delivery_time = package.delivery_time
         
-        print(f"Package id: {package_id}")
-        print(f"Package status at time {current_time}: {package_status}")
-        print(f"Delivery time of package: {package_delivery_time}")
+        print(f"Package id: {package_id}. Package status at time {current_time}: {package_status}. Delivery time of package: {package_delivery_time}")
     
     # Compute, then print the total mileage traveled by all trucks
     truck_hours_1 = hours_between(truck_1.depart_time, min(truck_1.return_time, current_time))
